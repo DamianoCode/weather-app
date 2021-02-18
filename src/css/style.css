@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .App{
     min-height: 100vh;
     background-color: #313748;
@@ -12,4 +11,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.wrapper{
+    border: #1a1c24 1px solid;
+    border-radius: 3px;
+    background-color: #20252fbe;
+    width: 70vw;
+    height: 70vh;
+    padding: 3em;
+}
+.cityName{
+    outline: none;
+    width: 80%;
+    height: 5vh;
+    background-color: #20252f00;
+    border: 0;
+    border-bottom:beige 1px solid;
+    transition: ease-in-out 0.5s;
+    color: beige;
+    text-align: right;
+    padding: 0 1em;
+}
+.cityName:focus, .cityName:hover{
+    background-color: #20252f;
+    transition: ease-in-out 0.5s;
+}
+.inputWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.inputWrapper:focus, .inputWrapper:hover ~button{
+    background-color: #20252f;
+}
+.inputWrapper svg{
+    fill: beige;
+}
+.inputWrapper button{
+    outline: none;
+    height: 5vh;
+    padding: 0 5px;
+    background-color: #20252f00;
+    border: 0;
+    border-bottom:  beige 1px solid;
+    border-right: beige 1px solid;
+}
+.weatherForCity h2{
+    text-align: center;
+    margin: 10px 0;
 }
